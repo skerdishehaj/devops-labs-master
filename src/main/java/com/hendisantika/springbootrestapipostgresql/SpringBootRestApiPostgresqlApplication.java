@@ -9,6 +9,4 @@ public class SpringBootRestApiPostgresqlApplication {
     public static void main(String[] args) {
         SpringApplication.run(SpringBootRestApiPostgresqlApplication.class, args);
     }
-
 }
-
