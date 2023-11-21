@@ -27,4 +27,11 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: Ls
       run: ls target
+    - name: Publish to Docker Hub
+      uses: docker/build-push-action@v1     
+      with:       
+       username: ${{ secrets.DOCKER_HUB_USERNAME }} 
+       password:  ${{ secrets.DOCKER_HUB_PASSWORD }}
+       repository: lmilt95/fti       
+       tags: ${{github.run_number}}
 
