@@ -1,6 +1,6 @@
 # Spring Boot configuration
 spring:
-  # Database
+  # Database configs
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://flora.db.elephantsql.com/kprbhkgn #jdbc:postgresql://trumpet.db.elephantsql.com/khbigqkv
