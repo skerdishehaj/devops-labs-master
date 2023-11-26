@@ -29,4 +29,4 @@ jobs:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_PASSWORD }}
           repository: skerdishehaj/devops-labs-master
-          tags: ${{github.run_number}}
+          tags: latest
