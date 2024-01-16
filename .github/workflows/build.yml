@@ -2,6 +2,10 @@ name: Java CI with Maven
 on:
   push:
     branches: ['master']
+env:
+  DATABASE_URL: ${{ secrets.DATABASE_URL }}
+  DATABASE_USERNAME: ${{ secrets.DATABASE_USERNAME }}
+  DATABASE_PASSWORD: ${{ secrets.DATABASE_PASSWORD }}
 jobs:
   build:
     runs-on: ubuntu-latest
