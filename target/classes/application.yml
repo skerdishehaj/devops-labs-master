@@ -1,0 +1,26 @@
+# Logging configuration
+logging:
+  level:
+    com.hendisantika.springbootrestapipostgresql.controller: DEBUG
+    root: INFO
+  file:
+    name: '/var/logs/devops-labs-master.log'
+# Spring Boot configuration
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://flora.db.elephantsql.com/kprbhkgn #jdbc:postgresql://trumpet.db.elephantsql.com/khbigqkv
+    username: kprbhkgn
+    password: AKmQui1SVr6UrzowFeVVQuOOe9ubOxDv
+  # JPA properties
+  jpa:
+    hibernate.ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+# Server configuration
+server:
+  port: 8080
+# Security configuration
+security:
+  user:
+    name: user
+  password: user
