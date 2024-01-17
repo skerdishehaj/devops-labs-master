@@ -20,4 +20,12 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
+          volumeMounts:
+            - name: logs-volume
+              mountPath: /var/logs
+      volumes:
+        - name: logs-volume
+          hostPath:
+            path: /var/logs
+            type: DirectoryOrCreate
 # kubectl apply -f app-deployment.yaml
